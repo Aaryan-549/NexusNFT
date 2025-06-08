@@ -9,8 +9,7 @@
 
 **A next-generation decentralized NFT marketplace featuring rollup technology, gas optimization, and seamless user experience**
 
-[🚀 Live Demo](#) • [📖 Documentation](#features) • [🛠️ Installation](#installation) • [🧪 Testing](#testing)
-
+[🚀 Live Demo](https://nexus-nft-cyan.vercel.app/) 
 </div>
 
 ---
