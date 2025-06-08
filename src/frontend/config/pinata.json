@@ -1,0 +1,6 @@
+{
+  "pinataUrl": "https://api.pinata.cloud/pinning/pinFileToIPFS",
+  "pinataJsonUrl": "https://api.pinata.cloud/pinning/pinJSONToIPFS",
+  "pinataGateway": "https://gateway.pinata.cloud/ipfs/",
+  "apiKey": "772d16cd57f3ecc7ecbc"
+}

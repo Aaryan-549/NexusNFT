@@ -1,0 +1,70 @@
+/* Loading.css */
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.loader {
+  display: flex;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hexagon {
+  position: relative;
+  width: 25px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: var(--primary);
+  border-radius: 2px;
+  animation: hexagon-animation 1.5s infinite ease-in-out;
+}
+
+.hexagon:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hexagon:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+}
+
+.hexagon:before {
+  top: -8.5px;
+  border-bottom: 8.5px solid var(--primary);
+}
+
+.hexagon:after {
+  bottom: -8.5px;
+  border-top: 8.5px solid var(--primary);
+}
+
+@keyframes hexagon-animation {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+.loading-text {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-top: 1rem;
+  letter-spacing: 0.5px;
+}

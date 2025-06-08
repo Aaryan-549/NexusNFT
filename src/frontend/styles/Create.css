@@ -1,0 +1,195 @@
+/* Create.css */
+.create-page {
+  padding: 2rem 0;
+}
+
+.create-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+}
+
+.create-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.create-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--text) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.create-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.create-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+.create-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-preview-container {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+  background-color: var(--surface-light);
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-placeholder {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  border: 2px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  background-color: var(--surface-light);
+  color: var(--text-secondary);
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.file-upload {
+  width: 100%;
+  max-width: 300px;
+}
+
+.file-upload input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-upload label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.file-upload label:hover {
+  background-color: #6b4bd6;
+  transform: translateY(-2px);
+}
+
+.file-upload label.uploading {
+  background-color: #6b4bd6;
+  cursor: wait;
+}
+
+.upload-icon {
+  font-size: 1.2rem;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-input-container {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary);
+}
+
+.price-input {
+  padding-left: 2.5rem;
+}
+
+.feedback-alert {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.feedback-alert.info {
+  background-color: rgba(127, 90, 240, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(127, 90, 240, 0.3);
+}
+
+.feedback-alert.success {
+  background-color: rgba(44, 182, 125, 0.1);
+  color: var(--success);
+  border: 1px solid rgba(44, 182, 125, 0.3);
+}
+
+.feedback-alert.error {
+  background-color: rgba(255, 84, 112, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(255, 84, 112, 0.3);
+}
+
+.create-nft-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .create-form-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .create-preview {
+    margin-bottom: 2rem;
+  }
+  
+  .image-preview-container,
+  .upload-placeholder,
+  .file-upload {
+    max-width: 100%;
+  }
+}

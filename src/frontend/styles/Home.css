@@ -1,0 +1,175 @@
+/* Home.css */
+.home {
+  padding-bottom: 3rem;
+}
+
+/* Featured Section */
+.featured-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1rem 0 4rem;
+  min-height: 500px;
+}
+
+.featured-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.featured-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, var(--text) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.featured-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.featured-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.featured-card {
+  flex: 1;
+  max-width: 450px;
+  position: relative;
+}
+
+.featured-card-content {
+  background-color: var(--surface);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+  transition: all 0.5s ease;
+}
+
+.featured-card-content:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.featured-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+}
+
+.featured-card-body {
+  padding: 1.5rem;
+}
+
+.featured-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.featured-card-text {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.featured-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-price {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+/* Marketplace section */
+.marketplace-section {
+  margin-top: 2rem;
+}
+
+.nft-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.card-img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nft-card:hover .card-img {
+  transform: scale(1.05);
+}
+
+.card-seller {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.seller-label {
+  color: var(--text-secondary);
+  margin-right: 0.5rem;
+}
+
+.seller-address {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.buy-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .featured-section {
+    flex-direction: column;
+    margin: 1rem 0 2rem;
+  }
+  
+  .featured-content, .featured-card {
+    max-width: 100%;
+  }
+  
+  .featured-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-title {
+    font-size: 2rem;
+  }
+  
+  .featured-description {
+    font-size: 1rem;
+  }
+}
